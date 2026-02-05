@@ -1,0 +1,215 @@
+.app-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #6773b9;
+  color: white;
+  height: 30px;
+  padding: 8px 18px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.logout-btn {
+  background-color: #fff;
+  width: 55px;
+  height: 30px;
+  font-size: 14px;
+  color: #3f51b5;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.app-container .content {
+  margin-top: 49px;
+  display: flex;
+  flex-direction: row;
+}
+
+.notifications-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.notifications-content {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  width: 400px;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.frequency-selection {
+  margin-top: 12px;
+}
+
+.frequency-selection p {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.frequency-selection label {
+  margin-right: 4px;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+}
+
+.frequency-selection input {
+  margin-right: 4px;
+}
+
+.login-container {
+  margin: 50px auto; 
+  width: 400px;
+  height: 500px !important;
+  padding: 20px;
+  border: 1px solid #ddd; 
+  border-radius: 10px;
+  background-color: #909090; 
+  box-shadow: 0 12px 20px rgb(0, 0, 0); 
+  text-align: center;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center;
+}
+
+.login-container .login-image {
+  width: 100px; 
+  height: 100px;
+  margin-bottom: 20px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+}
+
+.calendar-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+
+  }
+  
+  .left-panel {
+    flex: 1;
+    background: #f3fdfd;
+    height: 680px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .right-panel {
+    flex: 1.2;
+    background: #e3f6f7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    max-height: 645px;
+    overflow-y: auto; 
+  }
+  
+  .custom-calendar {
+    width: 200%;
+    max-width: 500px;
+    font-size: 1.2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .selected-date {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .details-textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+  }
+  
+  .save-button {
+    background: linear-gradient(
+    to right,
+    #007bff,
+    #ee61d9
+  );
+  border: 0px solid #fff;
+  border-radius: 15px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  }
+  
+  .save-button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .details-display {
+    background: #fafafa;
+    padding: 30px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    overflow-wrap: break-word;
+  }
+  
+  input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 200px;
+  }
+  
+  .login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  
